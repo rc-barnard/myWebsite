@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ruan Barnard | B.Sc. in IT (Cum Laude) Graduate</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+    <div class="container nav-container">
+        <div class="logo">
+            <span class="logo-mark">R</span>
+            <span class="logo-text">Ruan</span>
+        </div>
+        <nav class="nav">
+            <a href="index.html" class="nav-link">Home</a>
+            <a href="projects.html" class="nav-link active">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main>
+    <section class="section section-alt">
+        <div class="container hero-inner hero-center" style="margin-bottom: 20px;">
+            <h1 class="page-title">Projects</h1>
+        </div>
+        <div class="container">
+            <div class="projects-grid">
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h2>TCP Text Messaging Application</h2>
+                        <span class="project-tag">Networking & App Development</span>
+                    </div>
+                    <p class="project-text">
+                        A client–server text messaging application built in C# using TCP sockets. The system allows multiple clients to connect to a central server over the internet, authenticate, and exchange messages in real time.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Implemented client–server architecture using the TCP protocol for reliable message delivery.</li>
+                        <li>Handled multiple clients concurrently using threading.</li>
+                        <li>Used <strong>Playit.gg</strong> to expose the local server to the internet.</li>
+                        <li>Mitigated real-world networking issues such as port sniffing.</li>
+                        <li>Packaged the system as standalone .NET applications (.exe).</li>
+                    </ul>
+                    <div class="project-meta">
+                        <span class="meta-label">Tech:</span>
+                        <span class="meta-value">C#, .NET Framework, Visual Studio 2022, TCP Sockets, Playit.gg, Threading</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rc-barnard/CMPG315_TEXT_MESSAGING_APP" target="_blank">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h2>Professional Banking Services Management System</h2>
+                        <span class="project-tag">Back-end & Web Systems</span>
+                    </div>
+                    <p class="project-text">
+                        A web-based banking services system developed to manage clients, users, bank accounts,
+                        and financial transactions.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Followed the <strong>FAST methodology</strong> for structured development.</li>
+                        <li>Implemented <strong>RBAC</strong> for user privilege control.</li>
+                        <li>Developed secure authentication and OTP password recovery.</li>
+                        <li>Built structured SQL Server database and live UI updates.</li>
+                        <li>Included management reporting and transaction metrics.</li>
+                    </ul>
+                    <div class="project-meta">
+                        <span class="meta-label">Tech:</span>
+                        <span class="meta-value">C#, ASP.NET, SQL Server, Visual Studio, SMTP</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/rc-barnard/ProfessionalBankingServices" target="_blank">View on GitHub</a>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h2>Business Intelligence Reporting Solution</h2>
+                        <span class="project-tag">Data & Analytics</span>
+                    </div>
+                    <p class="project-text">
+                        A business intelligence solution designed to transform operational data into actionable insights for management.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Designed star-schema dimensional data model.</li>
+                        <li>Built ETL pipelines for transforming operational data.</li>
+                        <li>Delivered interactive dashboards and drill-down reporting.</li>
+                        <li>Optimised data structures for performance.</li>
+                        <li>Documented the entire BI architecture.</li>
+                    </ul>
+                    <div class="project-meta">
+                        <span class="meta-label">Tech:</span>
+                        <span class="meta-value">MongoDB, Python, ETL, Power BI</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-header">
+                        <h2>FIT@NWU — Campus Gym Management Platform</h2>
+                        <span class="project-tag">Full-stack • Real-time • Analytics</span>
+                    </div>
+                    <p class="project-text">
+                        A full-stack gym management platform for North-West University featuring analytics dashboards,
+                        class bookings, QR check-in/out, equipment auditing and membership management.
+                    </p>
+                    <ul class="project-bullets">
+                        <li>Hybrid MySQL + MongoDB database architecture.</li>
+                        <li>Touchless QR check-in/out using JWT and QR code scanning.</li>
+                        <li>Workout tracking, attendance analytics and KPI dashboards.</li>
+                        <li>Equipment auditing and class bookings.</li>
+                        <li>Role-based admin controls and secure authentication.</li>
+                    </ul>
+                    <div class="project-meta">
+                        <span class="meta-label">Tech:</span>
+                        <span class="meta-value">React, Express, Tailwind, MySQL, MongoDB, JWT, bcrypt, QRCode</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Luhardt/CMPG323-Project" target="_blank">View on GitHub</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© <span id="year"></span> Ruan • Systems Analyst & IT Auditor Enthusiast • B.Sc. IT (Cum Laude)</p>
+        <div class="footer-links">
+            <a href="projects.html"><b>Projects</b></a>
+            <a href="contact.html"><b>Contact</b></a>
+            <a href="https://github.com/rc-barnard" target="_blank"><b>GitHub</b></a>
+        </div>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
